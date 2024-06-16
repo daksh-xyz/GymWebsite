@@ -1,0 +1,181 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fbeee4;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #252569;
+}
+
+.navbar{
+    border-bottom: 2px #5d6164 solid;
+}
+
+.logOutdiv{
+    width: 100%;
+    display: grid;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#logOut{
+    font-size: 2vh;
+    font-weight: 500;
+    padding: 10px;
+    background-color: #252569;
+    color: white;
+    border-radius: 17px;
+    transition: 200ms ease-out;
+}
+
+#logOut:hover{
+    font-size: 2vh;
+    font-weight: 500;
+    background-color: #25256900;
+    border: #252569 2px solid;
+    color: black;
+}
+
+.navtable td{
+    padding: 20px;
+    font-size: 1.2vw;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.content{
+    margin: 100px 0;
+}
+
+
+#address{
+    font-size: small;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+#edit{
+    padding: 10px 17px;
+    background-color: #252569;
+    border-radius: 12px;
+    transition: 200ms ease-out;
+    border: none;
+}
+
+#edit a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#delete a{
+    text-decoration: none;
+    color: #000;
+}
+
+#edit:hover a{
+    text-decoration: none;
+    color: #000;
+}
+
+#edit:hover{
+    padding: 9px 16px;
+    background-color: #25256900;
+    border: #252569 1px solid;
+    color: black;
+}
+
+#delete{
+    border: none;
+    padding:10px;
+    background-color: red;
+    border-radius: 12px;
+    color: black;
+}
+
+/* ATE */
+
+.updateDiv{
+    width: 10%;
+    display: grid;
+    margin: 100px auto;
+}
+
+#Update{
+    font-size: 2vh;
+    font-weight: 500;
+    padding: 10px;
+    background-color: #252569;
+    color: white;
+    border-radius: 17px;
+    transition: 200ms ease-out;
+}
+
+#Update:hover{
+    font-size: 2vh;
+    font-weight: 500;
+    background-color: #25256900;
+    border: #252569 2px solid;
+    color: black;
+}
+
+.Trainer,.Member{
+    padding: 10px;
+    text-align: center;
+    width:fit-content;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.Trainer td,th,.Member td,th{
+    padding: 10px;
+}
+
+input,select{
+    background-color: #25256900;
+    border: none;
+    text-align: center;
+}
+
+#input-field{
+    border-bottom: 1px solid black;
+}
+
+/* ASE & ATE */
+
+.EditTable{
+    padding: 20px;
+    text-align: center;
+    width:fit-content;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.EditTable td,th{
+    padding: 20px;
+}
+
+/* DashBoard */
+
+.Dashtable{
+    text-align: center;
+    max-width: 100%;
+    min-width: 50%;
+    border-spacing: 3vw;
+}
+
+td a{
+    font-size: large;
+}
+
+.Dashtable td{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 70px;
+}

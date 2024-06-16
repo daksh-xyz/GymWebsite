@@ -1,0 +1,365 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow: overlay;
+    overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track-piece {
+    display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-clip: content-box;
+}
+
+a {
+    text-decoration: none;
+    color: #252569;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #252569;
+}
+
+#n1 {
+    padding: 20;
+    font-size: 1.3vw;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+}
+
+th {
+    color: #252569;
+}
+
+.NavBar {
+    background-color: #fbeee4;
+    border-bottom: 2px #5d6164 solid;
+    position: sticky;
+}
+
+.NavTable {
+    background-color: #fbeee4;
+    height: 100px;
+    width: 80%;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.main {
+    background-color: #fbeee4;
+    padding-bottom: 20px;
+}
+
+#join {
+    background-color: #252569;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color ease-out 200ms;
+}
+
+#join:hover {
+    background-color: #414190;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#GHS_logo {
+    width: 9.9em;
+    height: 10vh;
+    padding: 6px 0;
+}
+
+.HostelPhoto {
+    width: 100%;
+    height: 350px;
+}
+
+#photo {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#text {
+    z-index: 0;
+    width: fit-content;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    padding: 125px 0 0 0;
+    font-size: 40px;
+    font-family: "Playfair Display", serif;
+    color: white;
+}
+
+#LogIN {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 17px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-width: 2px;
+    border-style: solid;
+    transition: 200ms;
+}
+
+#LogIN:hover a{
+    text-decoration: none;
+}
+
+#LogIN:hover {
+    background-color: #ffffff;
+    padding: 12px 20px;
+    border-width: 2px;
+    border-style: solid;
+    color: rgb(0, 0, 0);
+    border-radius: 17px;
+    transition: 150ms;
+}
+
+.about {
+    background-color: #fbeee4;
+}
+
+#aboutPara {
+    padding: 25px 0;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+}
+
+.Intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    font-size: 14px;
+    font-weight: 400;
+    margin: auto;
+    padding: 20px 0;
+    background-image: url("https://www.anytimefitness.co.in/wp-content/uploads/2021/12/lt-purple-rm.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.VirtualTour {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    font-weight: 400;
+    margin: 5px auto;
+    padding: 20px 0;
+}
+
+#VT {
+    border: 2px #252569 solid;
+    border-radius: 17px;
+    padding: 12px;
+    transition: 200ms;
+}
+
+#VT:hover {
+    background-color: #252569;
+    padding: 12px;
+    border-radius: 17px;
+    color: white;
+}
+
+.ffa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    font-weight: 400;
+    margin: 5px auto;
+    padding: 20px 0;
+    background-image: url("https://www.anytimefitness.co.in/wp-content/uploads/2021/12/aqua-rm.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#WhyJoin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2%;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    margin: 5px auto;
+    font-weight: 400;
+}
+
+.imCarousel{
+    width: 50%;
+    margin: auto;
+}
+
+#cImg{
+    height: 350px;
+    margin: auto;
+}
+
+.Offering {
+    background-color: #fbeee4;
+    padding-bottom: 20px;
+}
+
+#OfferTable {
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    color: #5d6164;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+#OfferTable th{
+    text-align: center;
+}
+
+#t1 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.PEnclosure {
+    margin-top: 20px;
+    margin: 0 11vw;
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5vw;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#month,
+#quarter,
+#year {
+    border: #252569 2px solid;
+    border-radius: 5px;
+    padding: 7vw 0;
+    color: #252569;
+    transition: ease-in 200ms;
+}
+
+#month:hover,
+#quarter:hover,
+#year:hover {
+    border: #252569 2px solid;
+    border-radius: 5px;
+    padding: 7vw;
+    background-color: #252569;
+    color: white;
+}
+
+#paymentButton {
+    padding: 10px;
+    border: #252569 2px solid;
+    border-radius: 15px;
+}
+
+#month:hover #paymentButton,
+#quarter:hover #paymentButton,
+#year:hover #paymentButton {
+    color: white;
+    padding: 10px;
+    border: white 2px solid;
+    border-radius: 15px;
+}
+
+#month:hover #paymentButton:hover,
+#quarter:hover #paymentButton:hover,
+#year:hover #paymentButton:hover {
+    padding: 10px;
+    background-color: white;
+    color: #252569;
+    border-radius: 15px;
+}
+
+.footer {
+    margin-top: 30px;
+    color: white;
+    background-color: #241852;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+#address a {
+    color: white;
+}
+
+.f1 {
+    text-align: start;
+    margin-left: 7vw;
+}
+
+.f2 hr {
+    border: 1px red solid;
+    background-color: white;
+    height: 1px;
+}
+
+.f2 a,
+ul {
+    color: white;
+    list-style-type: none;
+}
+
+.f2 a:hover {
+    color: red;
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+.f3 a {
+    color: white;
+    text-align: right;
+}
+
+.f3 a:hover {
+    color: red;
+    text-align: right;
+    text-decoration: underline;
+}
+
+/* Carousel */
+
