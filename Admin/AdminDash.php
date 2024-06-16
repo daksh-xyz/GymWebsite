@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include ("php/config.php");
+include ("../php/config.php");
 if (!isset($_SESSION['Adminvalid'])) {
     header("Location: AdminPortal.php");
 }
@@ -32,7 +32,7 @@ $revenue = mysqli_fetch_assoc($revenuequery);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/AdminStyle.css">
+    <link rel="stylesheet" href="../src/AdminStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -50,12 +50,12 @@ $revenue = mysqli_fetch_assoc($revenuequery);
         <table width=100% height="100px" class="navtable">
             <tr>
                 <td width="10%">
-                    <a href="AdminHome.php"><img src="./src/GHSlogoFinal-011-1-300x147.png.webp" height="80px"
+                    <a href="AdminHome.php"><img src="../src/GHSlogoFinal-011-1-300x147.png.webp" height="80px"
                             width="160px"></a>
                 </td>
                 <td width=70%></td>
                 <td width=10% style="text-align:right;"><a href="AdminHome.php">Home</a></td>
-                <td width=10%><a href="php/Adminlogout.php"><button id="logOut">Log Out</button></a></td>
+                <td width=10%><a href="../php/Adminlogout.php"><button id="logOut">Log Out</button></a></td>
             </tr>
         </table>
     </div>
@@ -77,7 +77,7 @@ $revenue = mysqli_fetch_assoc($revenuequery);
             </tr>
             <tr>
                 <td colspan="3">
-                    <?php include('chart.php') ?>
+                    <?php include('../util/chart.php') ?>
                 </td>
                 <td>
                     <?php $lMem = (int)$nMem['totalMembers'] - (int)($aMem['activeMembers']);

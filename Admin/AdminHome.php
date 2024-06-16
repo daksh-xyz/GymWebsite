@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-include ("php/config.php");
+include ("../php/config.php");
 if (!isset($_SESSION['Adminvalid'])) {
-    header("Location: AdminPortal.php");
+    header("Location: ../AdminPortal.php");
 }
 $Memberquery = "SELECT * FROM member";
 $Memberresult = mysqli_query($con, $Memberquery);
@@ -20,7 +20,7 @@ $Trainerresult = mysqli_query($con, $Trainerquery);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/AdminStyle.css">
+    <link rel="stylesheet" href="../src/AdminStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -39,12 +39,12 @@ $Trainerresult = mysqli_query($con, $Trainerquery);
         <table width=100% height="100px" class="navtable">
             <tr>
                 <td width="10%">
-                    <a href="AdminHome.php"><img src="./src/GHSlogoFinal-011-1-300x147.png.webp" height="80px"
+                    <a href="AdminHome.php"><img src="../src/GHSlogoFinal-011-1-300x147.png.webp" height="80px"
                             width="160px"></a>
                 </td>
                 <td width=70%></td>
                 <td width=10%><a href="AdminDash.php">Dashboard</a< /td>
-                <td width=10%><a href="php/Adminlogout.php"><button id="logOut">Log Out</button></a></td>
+                <td width=10%><a href="../php/Adminlogout.php"><button id="logOut">Log Out</button></a></td>
             </tr>
         </table>
     </div>
@@ -94,8 +94,8 @@ $Trainerresult = mysqli_query($con, $Trainerquery);
                     <td>' . $address . '</td>
                     <td>' . $joinDate . '</td>
                     <td>' . $status . '</td>
-                    <td><button id="edit"><a href="ASE.php?editid=' . $id . '">Edit</a></button></td>
-                    <td><button id="delete"><a href="ASD.php?deleteid=' . $id . '">Delete</a></button></td>
+                    <td><button id="edit"><a href="edit/ASE.php?editid=' . $id . '">Edit</a></button></td>
+                    <td><button id="delete"><a href="delete/ASD.php?deleteid=' . $id . '">Delete</a></button></td>
                 ';
             }
             ?>
@@ -133,8 +133,8 @@ $Trainerresult = mysqli_query($con, $Trainerquery);
                     <td>' . $email . '</td>
                     <td>' . $contact . '</td>
                     <td>₹' . $salary . '</td>
-                    <td><button id="edit"><a href="ATE.php?editid=' . $id . '">Edit</a></button></td>
-                    <td><button id="delete"><a href="ATD.php?deleteid=' . $id . '">Delete</a></button></td>
+                    <td><button id="edit"><a href="edit/ATE.php?editid=' . $id . '">Edit</a></button></td>
+                    <td><button id="delete"><a href="delete/ATD.php?deleteid=' . $id . '">Delete</a></button></td>
                 ';
             }
             ?>

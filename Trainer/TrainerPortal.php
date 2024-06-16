@@ -9,15 +9,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trainer Login | GHS - MUJ</title>
-  <link rel="stylesheet" href="src/StudentStyles.css">
-  <script src="src/scripts.js"></script>
+  <link rel="stylesheet" href="../src/StudentStyles.css">
+  <script src="../src/scripts.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
     <?php
 
-    include ("php/config.php");
+    include ("../php/config.php");
     if (isset($_POST['submit'])) {
       $email = mysqli_real_escape_string($con, $_POST['email']);
       $password = mysqli_real_escape_string($con, $_POST['password']);
@@ -62,7 +62,7 @@
             <input type="checkbox" id="remember">
             <p>Remember me</p>
           </label>
-          <a href="ForgotPass.html">Forgot password?</a>
+          <a href="../ForgotPass.php">Forgot password?</a>
         </div>
         <div class="field">
           <input type="submit" class="btn" name="submit" value="Login"

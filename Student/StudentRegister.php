@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Registration | GHS - MUJ</title>
-  <link rel="stylesheet" href="src/StudentStyles.css">
+  <link rel="stylesheet" href="../src/StudentStyles.css">
   <script src="src/scripts.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
     <?php
-    include ("php/config.php");
+    include ("../php/config.php");
     if (isset($_POST['submit'])) {
       $username = $_POST['username'];
       $gender = $_POST['gender'];

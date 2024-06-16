@@ -1,6 +1,6 @@
 <?php
 
-include 'php/config.php';
+include '../../php/config.php';
 $id = $_GET['editid'];
 
 ?>
@@ -10,7 +10,7 @@ $id = $_GET['editid'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/AdminStyle.css">
+    <link rel="stylesheet" href="../../src/AdminStyle.css">
     <title>Admin Member Edit</title>
 </head>
 
@@ -29,7 +29,7 @@ $id = $_GET['editid'];
             echo "<div class='message'>
             <p style='text-align:center;'>Profile Updated!</p>
         </div> <br>";
-            echo "<a href='AdminHome.php'><button class='btn'>Go Home</button>";
+            echo "<a href='../AdminHome.php'><button class='btn'>Go Home</button>";
         }
 
     } else {
@@ -80,7 +80,7 @@ $id = $_GET['editid'];
             <div class="updateDiv">
                 <input type="submit" id="Update" name="submit" value="Update" required>
                 <br>
-                <a id="Update" name="back" href="AdminHome.php" style="text-align:center;text-decoration:none;">Go Back</a>
+                <a id="Update" name="back" href="../AdminHome.php" style="text-align:center;text-decoration:none;">Go Back</a>
             </div>
 
         </form>

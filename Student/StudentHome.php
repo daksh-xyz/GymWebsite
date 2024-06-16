@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include ("php/config.php");
+include ("../php/config.php");
 if (!isset($_SESSION['Studentvalid'])) {
     header("Location: StudentPortal.php");
 }
@@ -16,7 +16,7 @@ $getTresult= mysqli_query($con, $getTname);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/HomeStyle.css">
+    <link rel="stylesheet" href="../src/HomeStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -40,7 +40,7 @@ $getTresult= mysqli_query($con, $getTname);
         <table width=100% height="100px" class="navtable">
             <tr>
                 <td width="10%">
-                    <a href="StudentHome.php"><img src="./src/GHSlogoFinal-011-1-300x147.png.webp" height="80px"
+                    <a href="StudentHome.php"><img src="../src/GHSlogoFinal-011-1-300x147.png.webp" height="80px"
                             width="160px"></a>
                 </td>
                 <td width=70%></td>
@@ -70,7 +70,7 @@ $getTresult= mysqli_query($con, $getTname);
                     $res_Address = $result['Address'];
                     $res_Status = $result['Status'];
                 }
-                echo "<td style='text-align:right;'><a href='StudentEdit.php?MemberID=$res_id'><img src='./src/account.png' width='50px' height='50px'></a></td>
+                echo "<td style='text-align:right;'><a href='StudentEdit.php?MemberID=$res_id'><img src='../src/account.png' width='50px' height='50px'></a></td>
                 <td style='text-align:left;padding-left:15px'><a href='StudentEdit.php?MemberID=$res_id'>$res_Uname</a></td>";
                 ?>
             </tr>
@@ -107,7 +107,7 @@ $getTresult= mysqli_query($con, $getTname);
         </table>
     </div>
     <div class="logOutdiv">
-        <a href="php/logout.php"> <button id="logOut">Log Out</button></a>
+        <a href="../php/logout.php"> <button id="logOut">Log Out</button></a>
     </div>
 </body>
 

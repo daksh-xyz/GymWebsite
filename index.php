@@ -39,15 +39,15 @@
                 <td id="n1"><a href="https://www.calculator.net/bmi-calculator.html" target="_blank">BMI TEST</a></td>
                 <td id="n1"><a href="#Price">PRICING</a></td>
                 <td id="n1"><a href="https://www.goodhostspaces.com/contact-us/" target="_blank">CONTACT US</a></td>
-                <td id="n1"><a href="./StudentRegister.php" id="join" target="_blank">JOIN NOW</a></td>
+                <td id="n1"><a href="./Student/StudentRegister.php" id="join" target="_blank">JOIN NOW</a></td>
             </tr>
         </table>
     </div>
     <div class="HostelPhoto">
         <img id="photo" src="src/MUJ-Hostel-Photo.jpg">
         <p id="text">GHS Hostel at Manipal University,<br>Jaipur<br>
-            <a id="LogIN" href="./StudentPortal.php">Member Log In</a>
-            <a id="LogIN" href="./TrainerPortal.php">Trainer Log In</a>
+            <a id="LogIN" href="./Student/StudentPortal.php">Member Log In</a>
+            <a id="LogIN" href="./Trainer/TrainerPortal.php">Trainer Log In</a>
         </p>
     </div>
     <div class="about">

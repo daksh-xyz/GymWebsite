@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include ("php/config.php");
+include ("../php/config.php");
 if (!isset($_SESSION['Trainervalid'])) {
     header("Location: TrainerPortal.php");
 }
@@ -14,7 +14,7 @@ if (!isset($_SESSION['Trainervalid'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/HomeStyle.css">
+    <link rel="stylesheet" href="../src/HomeStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -38,7 +38,7 @@ if (!isset($_SESSION['Trainervalid'])) {
         <table width=100% height="100px" class="navtable">
             <tr>
                 <td width="10%">
-                    <a href="TrainerHome.php"><img src="./src/GHSlogoFinal-011-1-300x147.png.webp" height="80px"
+                    <a href="TrainerHome.php"><img src="../src/GHSlogoFinal-011-1-300x147.png.webp" height="80px"
                             width="160px"></a>
                 </td>
                 <td width=70%></td>
@@ -64,7 +64,7 @@ if (!isset($_SESSION['Trainervalid'])) {
                 echo "<td><a href='TrainerEdit.php?TrainerID=$res_id'>Change Profile</a></td>";
                 ?>
 
-                <td><a href="php/Trainerlogout.php"> <button id="logOut">Log Out</button></a></td>
+                <td><a href="../php/Trainerlogout.php"> <button id="logOut">Log Out</button></a></td>
             </tr>
         </table>
     </div>

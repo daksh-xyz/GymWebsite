@@ -1,6 +1,6 @@
 <?php
 
-include './php/config.php';
+include '../../php/config.php';
 if(isset($_GET['deleteid'])){
     $id = $_GET['deleteid'];
 
@@ -9,7 +9,7 @@ if(isset($_GET['deleteid'])){
     if($result){
         echo" Deleted successfully";
         echo"<br><br><br>";
-        echo'<button><a href="AdminHome.php">Go Back</button>';
+        echo'<button><a href="../AdminHome.php">Go Back</button>';
     }else{
         die(mysqli_error($con));
     }
